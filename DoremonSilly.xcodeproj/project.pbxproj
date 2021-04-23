@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8822BC542632B52900273FAA /* DoremonSilly.h in Headers */ = {isa = PBXBuildFile; fileRef = 8822BC522632B52900273FAA /* DoremonSilly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8822BC5C2632B53500273FAA /* DoremonSilly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8822BC5B2632B53500273FAA /* DoremonSilly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8822BC4F2632B52900273FAA /* DoremonSilly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DoremonSilly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8822BC522632B52900273FAA /* DoremonSilly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoremonSilly.h; sourceTree = "<group>"; };
 		8822BC532632B52900273FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8822BC5B2632B53500273FAA /* DoremonSilly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoremonSilly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				8822BC522632B52900273FAA /* DoremonSilly.h */,
 				8822BC532632B52900273FAA /* Info.plist */,
+				8822BC5B2632B53500273FAA /* DoremonSilly.swift */,
 			);
 			path = DoremonSilly;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					8822BC4E2632B52900273FAA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8822BC5C2632B53500273FAA /* DoremonSilly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		8822BC582632B52900273FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diachiso.client.DoremonSilly;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		8822BC592632B52900273FAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
